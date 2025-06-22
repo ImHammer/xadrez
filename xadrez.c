@@ -5,6 +5,8 @@ int main()
 	int torreMov = 5;
 	int bispoMov = 5;
 	int rainhMov = 8;
+	int cavaBMov = 2;
+	int cavaDMov = 1;
 
 	printf(" > Movimentação TORRE <\n");
 	for (int i = 0; i < torreMov; i++) {
@@ -24,5 +26,19 @@ int main()
 		printf("Esquerda\n");
 	}
 
+	printf("\n");
+
+	printf("Movimento do Cavalo:\n");
+	for (int j = 0; j < cavaBMov; j++) {
+		printf("Baixo\n");
+
+		if (j == cavaBMov - 1) {
+			int k = 0;
+			while (k < cavaDMov) {
+				printf("Esquerda\n");
+				k++;
+			}
+		}
+	}
 	return 0;
 }
