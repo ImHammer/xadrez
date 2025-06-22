@@ -12,7 +12,7 @@ endif()
 project ("xadrez")
 
 # Adicione a origem ao executável deste projeto.
-add_executable (xadrez "xadrez.cpp" "xadrez.h")
+add_executable (xadrez "xadrez.c")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET xadrez PROPERTY CXX_STANDARD 20)
